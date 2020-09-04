@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/audioRecordFragment">
+
+    <fragment
+        android:id="@+id/audioRecordFragment"
+        android:name="com.jagdeesh.voicerecorder.AudioRecordFragment"
+        android:label="fragment_audio_record"
+        tools:layout="@layout/fragment_audio_record" >
+        <action
+            android:id="@+id/action_audioRecordFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"
+            />
+        <action
+            android:id="@+id/action_audioRecordFragment_to_audioRecordedListFragment"
+            app:destination="@id/audioRecordedListFragment"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/audioRecordedListFragment"
+        android:name="com.jagdeesh.voicerecorder.AudioRecordedListFragment"
+        android:label="fragment_audio_recorded_list"
+        tools:layout="@layout/fragment_audio_recorded_list" />
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.jagdeesh.voicerecorder.AboutAppFragment"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app" >
+        <action
+            android:id="@+id/action_aboutAppFragment_to_audioRecordFragment"
+            app:destination="@id/audioRecordFragment"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+    </fragment>
+</navigation>
