@@ -1,10 +1,17 @@
-# Voice Recorder Android Application-
+# Voice Recorder Android Application
 
-This Android Application provides simple way of recording audio files and playing recorded audio files.
+A lightweight and user-friendly Voice Recorder Android app built with Java and native Android SDK. This app allows users to record, play back, and manage audio recordings on their Android devices with ease.
 
-![App Recording screen](https://github.com/charyjagdeesh/Voice-Recoreder/blob/master/Screenshots/Record.png?raw=true)
+<img src="https://github.com/charyjagdeesh/Voice-Recoreder/blob/master/Screenshots/Record.png" width=400/><br><br>
 
-for more screenshots [click here](https://github.com/charyjagdeesh/Voice-Recoreder/tree/master/Screenshots)
+## ✨ Features
+
+- 🎤 Record high-quality audio using the device’s microphone
+- 💾 Save recordings in internal storage with unique timestamps
+- 📁 View a list of saved recordings with timestamp and duration
+- ▶️ Play, pause, and resume recordings
+- 📂 Recordings saved in .mp3 format
+- 🔒 Handles required permissions at runtime
 
 ## 📖  Getting started
 
